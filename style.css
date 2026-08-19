@@ -45,3 +45,33 @@ body{position:relative;overflow-x:hidden}
 .summary button{width:100%;border:0;border-radius:999px;padding:13px;background:#ddd;color:#888;font-weight:900;margin-top:10px}
 .summary small{display:block;text-align:center;color:#888;margin-top:10px}
 @media(max-width:700px){.checkout-grid{grid-template-columns:1fr}.mini-header{grid-template-columns:1fr auto}.mini-header>span{display:none}}
+
+.logo-wrap{display:flex;justify-content:center;align-items:center;width:100%;position:relative;z-index:2}
+.floating-decor{position:fixed;inset:0;pointer-events:none;z-index:999;overflow:hidden}
+.floating-decor span{position:absolute;top:-80px;display:block;font-size:26px;opacity:.9;filter:drop-shadow(0 3px 5px rgba(100,40,80,.12));animation:peachFall linear infinite}
+.floating-decor span:nth-child(1){left:3%;animation-duration:9s;animation-delay:-2s}
+.floating-decor span:nth-child(2){left:9%;font-size:20px;animation-duration:7s;animation-delay:-5s}
+.floating-decor span:nth-child(3){left:16%;animation-duration:11s;animation-delay:-7s}
+.floating-decor span:nth-child(4){left:23%;font-size:18px;animation-duration:8s;animation-delay:-1s}
+.floating-decor span:nth-child(5){left:31%;animation-duration:10s;animation-delay:-6s}
+.floating-decor span:nth-child(6){left:39%;font-size:21px;animation-duration:7.5s;animation-delay:-3s}
+.floating-decor span:nth-child(7){left:47%;animation-duration:12s;animation-delay:-9s}
+.floating-decor span:nth-child(8){left:54%;font-size:19px;animation-duration:8.5s;animation-delay:-4s}
+.floating-decor span:nth-child(9){left:61%;animation-duration:10.5s;animation-delay:-8s}
+.floating-decor span:nth-child(10){left:68%;font-size:18px;animation-duration:7.8s;animation-delay:-2s}
+.floating-decor span:nth-child(11){left:75%;animation-duration:11.5s;animation-delay:-10s}
+.floating-decor span:nth-child(12){left:82%;font-size:21px;animation-duration:8.2s;animation-delay:-5s}
+.floating-decor span:nth-child(13){left:88%;animation-duration:10s;animation-delay:-7s}
+.floating-decor span:nth-child(14){left:94%;font-size:18px;animation-duration:7.2s;animation-delay:-1s}
+.floating-decor span:nth-child(15){left:27%;animation-duration:13s;animation-delay:-12s}
+.floating-decor span:nth-child(16){left:58%;font-size:20px;animation-duration:9s;animation-delay:-6s}
+.floating-decor span:nth-child(17){left:72%;animation-duration:12s;animation-delay:-11s}
+.floating-decor span:nth-child(18){left:44%;font-size:18px;animation-duration:8s;animation-delay:-3s}
+@keyframes peachFall{0%{transform:translate3d(0,-80px,0) rotate(0deg);opacity:0}8%{opacity:.9}50%{transform:translate3d(45px,55vh,0) rotate(160deg)}92%{opacity:.9}100%{transform:translate3d(-35px,115vh,0) rotate(320deg);opacity:0}}
+.inquiry-panel{display:flex;justify-content:space-between;align-items:center;gap:18px;margin:12px 0;padding:13px 15px;border:2px dashed #f3b7ce;border-radius:16px;background:#fff8fb}
+.inquiry-panel strong{color:var(--purple);display:block}.inquiry-panel span{font-size:12px;color:#777}.inquiry-panel p{margin:0;color:#666;font-size:12px;max-width:560px;line-height:1.4}
+.save-btn{border:0;background:var(--pink);color:#fff;border-radius:999px;padding:7px 10px;font-size:11px;font-weight:900;cursor:pointer}
+.saved-section{width:min(1120px,calc(100% - 28px));margin:0 auto 25px;background:#fff;border-radius:20px;padding:18px;box-shadow:0 10px 28px rgba(80,40,100,.09)}
+.saved-head{display:flex;justify-content:space-between;align-items:center}.saved-head h2{margin:0;color:var(--purple)}.saved-head button{border:0;background:#f4eaf8;color:var(--purple);padding:8px 12px;border-radius:999px;font-weight:800}
+.saved-items{margin-top:10px}.saved-row{display:flex;align-items:center;gap:12px;border-top:1px solid #eee5ea;padding:10px 0}.saved-row span{flex:1}.saved-row strong{color:var(--purple)}.saved-row button{border:0;background:none;color:#c33;font-size:20px;cursor:pointer}
+@media(max-width:620px){.inquiry-panel{display:block}.inquiry-panel p{margin-top:7px}.saved-section{width:min(100% - 18px,1120px)}.floating-decor span{font-size:20px}}
